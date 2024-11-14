@@ -12,15 +12,18 @@ public class ContactController {
 								@RequestParam("firstName") String firstName,
 								@RequestParam("email") String email,
 								@RequestParam("phone") String phone,
+
+
+
 								@RequestParam("zipCode") String zipCode,
 								@RequestParam("address") String address,
 								@RequestParam("buildingName") String buildingName,
 								@RequestParam("contactType") String contactType,
 								@RequestParam("body") String body,
 								ModelAndView mv) {
-		
+
 		mv.setViewName("confirmation");
-		
+
 		mv.addObject("lastName", lastName);
 		mv.addObject("firstName", firstName);
 		mv.addObject("email", email);
@@ -30,7 +33,7 @@ public class ContactController {
 		mv.addObject("buildingName", buildingName);
 		mv.addObject("contactType", contactType);
 		mv.addObject("body", body);
-		
+
 		return mv;
 	}
 }
