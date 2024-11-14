@@ -15,7 +15,6 @@ public class ContactController {
 
 
 
-								@RequestParam("zipCode") String zipCode,
 								@RequestParam("address") String address,
 								@RequestParam("buildingName") String buildingName,
 								@RequestParam("contactType") String contactType,
